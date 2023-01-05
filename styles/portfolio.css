@@ -20,6 +20,10 @@
   padding: 18px 36px;
 }
 
+section {
+  margin-top: 130px;
+}
+
 /* Header and Navigation styles */
 .header {
   background: #fff8f3;
@@ -51,8 +55,13 @@ nav li {
 /* Banner styles */
 .banner {
   display: flex;
-  margin: 0 38px 0 230px;
+  margin-left: 230px;
   align-items: center;
+  
+}
+
+.banner img {
+  padding-left: 500px;
 }
 
 .banner-sub-title {
@@ -76,13 +85,12 @@ nav li {
 }
 
 /* main section */
-main {
+main{
   max-width: 1140px;
   margin: 0 auto;
 }
 /* About me section */
 .about {
-  margin-top: 130px;
   background: #fff8f3;
   border-radius: 10px;
   padding: 130px 150px;
@@ -94,6 +102,7 @@ main {
   font-size: 35px;
   color: #181818;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .section-description {
@@ -120,14 +129,9 @@ main {
 
 /* What i do styles */
 
-.what-i-do {
-  margin-top: 130px;
-  padding: 130px 150px;
-  text-align: center;
-}
-
 .skills-container {
   display: flex;
+  gap: 24px;
 }
 
 .skill {
@@ -135,11 +139,98 @@ main {
   box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   padding: 30px;
-  margin-right: 24px;
 }
 
 .skill-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #181818;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .skill-description {
+  color: #757575;
 }
+
+/* Resume Styles */
+
+.resume-content {
+  display: flex;
+  gap: 24px;
+  margin-top: 113px;
+}
+.resume-content .card-title {
+  font-weight: 700;
+  font-size: 30px;
+  color: #474747;
+
+  margin-bottom: 30px;
+}
+
+.resume-item .title {
+  font-weight: 700;
+  font-size: 25px;
+  color: #474747;
+}
+.resume-item .sub-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #757575;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.resume-item .description {
+  color: #757575;
+}
+
+hr {
+  width: 558px;
+  border: 1px solid #d1d1d1;
+  margin: 30px 0;
+}
+
+.resume-btn {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Contact Style */
+
+.contact {
+  display: flex;
+  gap: 100px;
+  background: #fff8f3;
+  padding: 130px 200px;
+}
+
+.contact-info {
+  padding: 0 200px;
+}
+
+.contact a {
+  text-decoration: none;
+  margin-right: 24px;
+}
+
+.contact .section-title {
+  text-align: left;
+}
+
+.contact input[type="text"],input[type="email"],
+textarea {
+  margin-bottom: 24px;
+  border: 0;
+  width: 100%;
+  padding: 18px 30px;
+}
+
+/* .contact input {
+  width: 461px;
+  height: 64px;
+  padding: 18px 30px;
+  border: none;
+  color: #757575;
+  background: #ffffff;
+  border-radius: 5px;
+} */
