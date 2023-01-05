@@ -20,6 +20,18 @@
   padding: 18px 36px;
 }
 
+.btn-secondary {
+  height: 64px;
+  border: 1px solid #fd6e0a;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 18px 36px;
+  color: #fd6e0a;
+  margin-left: 30px;
+}
+
 section {
   margin-top: 130px;
 }
@@ -57,11 +69,10 @@ nav li {
   display: flex;
   margin-left: 230px;
   align-items: center;
-  
 }
 
 .banner img {
-  padding-left: 500px;
+  padding-right: 40px;
 }
 
 .banner-sub-title {
@@ -82,10 +93,11 @@ nav li {
   font-size: 18px;
   color: #757575;
   margin-bottom: 30px;
+  padding-right: 500px;
 }
 
 /* main section */
-main{
+main {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -217,7 +229,8 @@ hr {
   text-align: left;
 }
 
-.contact input[type="text"],input[type="email"],
+.contact input[type='text'],
+input[type='email'],
 textarea {
   margin-bottom: 24px;
   border: 0;
