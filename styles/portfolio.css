@@ -34,6 +34,7 @@
 
 section {
   margin-top: 130px;
+  padding: 20px;
 }
 
 /* Header and Navigation styles */
@@ -107,6 +108,7 @@ main {
   border-radius: 10px;
   padding: 130px 150px;
   text-align: center;
+  /* margin: 0 20px; */
 }
 
 .section-title {
@@ -121,6 +123,8 @@ main {
   font-size: 18px;
   color: #757575;
   margin-bottom: 30px;
+  padding: 20px;
+  text-align: center;
 }
 
 .about-info-container {
@@ -197,7 +201,7 @@ main {
 }
 
 hr {
-  width: 558px;
+  width: 100%;
   border: 1px solid #d1d1d1;
   margin: 30px 0;
 }
@@ -216,8 +220,9 @@ hr {
   padding: 130px 200px;
 }
 
-.contact-info {
-  padding: 0 200px;
+.contact-info .section-description {
+  text-align: left;
+  padding-left: 0;
 }
 
 .contact a {
@@ -238,6 +243,139 @@ textarea {
   padding: 18px 30px;
 }
 
+/* Responsive Small screen */
+
+@media screen and (max-width: 576px) {
+  .banner-description {
+    padding: 0;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .header {
+    /* background-color: #fd6e0a; */
+    background-image: none;
+  }
+
+  .skills-container,
+  .contact,
+  .banner {
+    flex-direction: column;
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  .banner {
+    margin-top: 50px;
+  }
+
+  .banner-sub-title {
+    font-size: 8vw;
+  }
+
+  .banner-title {
+    font-size: 15vw;
+  }
+
+  nav .btn-primary {
+    display: none;
+  }
+  nav{
+    padding: 10px 20px;
+  }
+
+
+  .about {
+    padding: 50px 20px;
+  }
+  .about-info-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .resume-content {
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+
+  .card-title {
+    margin-top: 30px;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: left;
+  }
+}
+
+/* Responsive Medium Screen */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .banner-description {
+    padding: 0;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .header {
+    /* background-color: #fd6e0a; */
+    background-image: none;
+  }
+
+  .banner {
+    margin-top: 50px;
+  }
+
+  .banner-sub-title {
+    font-size: 8vw;
+  }
+
+  .banner-title {
+    font-size: 15vw;
+  }
+
+  nav .btn-primary {
+    display: none;
+  }
+  nav{
+    padding: 10px 20px;
+  }
+
+  .skills-container, .banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 20px;
+  }
+
+  .about {
+    padding: 50px 20px;
+  }
+
+  .about-info-container {
+    justify-content: space-between;
+  }
+  .resume-content {
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 50px 50px;
+    text-align: left;
+  }
+}
+
+.hide {
+  display: none;
+}
 /* .contact input {
   width: 461px;
   height: 64px;
